@@ -1,0 +1,132 @@
+
+body 
+{
+    background-color: #343a40;
+    font-family: "segoe ui light";
+}
+
+.search input 
+{
+    border:none;
+    border-bottom:1px solid #fff;
+    background-color: transparent ;
+    border-radius:0;
+}
+
+
+.search input:focus 
+{
+    background-color: transparent ;
+    box-shadow: none;
+}
+
+input::placeholder          
+{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+
+.overlay 
+{
+    background-color: rgba(255, 66, 66, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:100%;
+    height: 100%;
+    transition: all 1s;
+    transform: scale(0);
+
+}
+.movie:hover .overlay 
+{
+    transform: scale(1);
+
+}
+/* 
+/////////////////////////////////////////////////////////////////   side bar//////////////////////////////////////////// */
+
+.sideMenu
+{
+    width: 250px;
+    position: fixed;
+     left: -175px;
+     top: 0;
+    background-color: red;
+    z-index: 999;
+    display: flex;
+  
+    
+}
+.leftSide
+{
+    width: 70%;
+    height: 100vh;
+    background-color:rgb(115, 115, 201);
+   
+   
+}
+.leftSide ul li
+{
+    list-style-type: none;
+    padding-top: 500px;
+}
+.rightSide
+{
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+}
+
+.rightSide img
+{
+    width: 50px;
+    padding: 30px 0;
+}
+.rightSide i
+{
+    font-size: 25px;
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------top button-------------------------------------- */
+.i_button_top{
+    display: inline-block;
+    color: #fff !important;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+}
+.a_button_top{
+    display: none;
+    background: rgba(0,0,0,0.6);
+    border: 2px solid rgba(255,255,255,0.8);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+    opacity: .5;
+}
+.a_button_top:hover{
+    background: rgb(0, 0, 0);
+    opacity: .5;
+}
+.a_button_top.scrollh{
+    display: block;
+    transition: display 0.5s linear;
+}
+
+/* ----------------------------------------------------------------end top button--------------------------------- */
