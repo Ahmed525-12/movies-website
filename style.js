@@ -23,9 +23,9 @@ function display() {
      <img class="w-100" src="${poster+allMoviesArraay[i].poster_path}" alt="">
       <div class="overlay position-absolute text-center pt-5">
           <h2 class="text-white">${allMoviesArraay[i].title}</h2>
-          <p class="text-white">${allMoviesArraay[i].overview}</p>
-          <h3 class="text-white">${allMoviesArraay[i].original_title}</h3>
-          <span class="text-white">${allMoviesArraay[i].vote_average}</span>
+          <p class="text-light">${allMoviesArraay[i].overview}</p>
+         
+          <span class="text-warning">${allMoviesArraay[i].vote_average}</span>
       </div>
  </div>
 </div>
@@ -67,9 +67,9 @@ function searchdisplay() {
      <img class="w-100" src="${poster+allSearchArraay[i].poster_path}" alt="">
       <div class="overlay position-absolute text-center pt-5">
           <h2 class="text-white">${allSearchArraay[i].title}</h2>
-          <p class="text-white">${allSearchArraay[i].overview}</p>
-          <h3 class="text-white">${allSearchArraay[i].original_title}</h3>
-          <span class="text-white">${allSearchArraay[i].vote_average}</span>
+          <p class="text-primary">${allSearchArraay[i].overview}</p>
+         
+          <span class="text-warning">${allSearchArraay[i].vote_average}</span>
       </div>
  </div>
 </div>
