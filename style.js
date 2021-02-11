@@ -21,11 +21,11 @@ function display() {
         <div class="col-md-4 mt-3">
 <div class="movie position-relative overflow-hidden">
      <img class="w-100" src="${poster+allMoviesArraay[i].poster_path}" alt="">
-      <div class="overlay position-absolute text-center pt-5">
-          <h2 class="text-white">${allMoviesArraay[i].title}</h2>
-          <p class="text-light">${allMoviesArraay[i].overview}</p>
+      <div class="overlay position-absolute text-center pt-5 pt-sm-0">
+          <h2 class="text-white pt-lg-5 mt-lg-5 mt-sm-0 pt-sm-0 pt-0 mt-0">${allMoviesArraay[i].title}</h2>
+        
          
-          <span class="text-warning">${allMoviesArraay[i].vote_average}</span>
+          <h4 class="text-warning pt-3">${allMoviesArraay[i].vote_average}</h4>
       </div>
  </div>
 </div>
@@ -67,9 +67,9 @@ function searchdisplay() {
      <img class="w-100" src="${poster+allSearchArraay[i].poster_path}" alt="">
       <div class="overlay position-absolute text-center pt-5">
           <h2 class="text-white">${allSearchArraay[i].title}</h2>
-          <p class="text-primary">${allSearchArraay[i].overview}</p>
+     
          
-          <span class="text-warning">${allSearchArraay[i].vote_average}</span>
+          <h4 class="text-warning pt-3">${allSearchArraay[i].vote_average}</h4>
       </div>
  </div>
 </div>
